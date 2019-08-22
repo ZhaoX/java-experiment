@@ -20,5 +20,7 @@
 
   <modules>
     <module>hystrix</module>
+    <module>tmp</module>
+    <module>tmp</module>
   </modules>
 </project>

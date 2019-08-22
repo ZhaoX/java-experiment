@@ -66,7 +66,7 @@ public class HystrixThreadPoolTest {
       thread.start();
       Thread.sleep(200);
 
-      if(fi == coreSize || fi == coreSize + maximumSize || fi == coreSize + maximumSize + maxQueueSize ) {
+      if(fi == coreSize || fi == coreSize + maximumSize || fi == coreSize + maxQueueSize ) {
         System.out.println("Started Jobs: " + fi);
         printThreadPoolStatus();
         System.out.println();
@@ -79,8 +79,6 @@ public class HystrixThreadPoolTest {
       thread.join();
     }
 
-    System.out.println("DONE!");
-    printThreadPoolStatus();
   }
 
   static void printThreadPoolStatus() {
